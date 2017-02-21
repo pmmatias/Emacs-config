@@ -32,7 +32,7 @@
                      multiple-cursors
                      php-mode
                      powershell
-					 projectile
+                     projectile
                      scala-mode
                      smex
                      spray
