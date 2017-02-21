@@ -66,5 +66,6 @@
 (defun display-startup-echo-area-message () "" (message ""))
 
 ;; Use a separated custom-file
-(setq custom-file "~/.emacs.d/custom.el")
+(setq custom-file (expand-file-name "custom.el" user-emacs-directory))
+(unless (file-exists-p custom-file) (write-region "" nil custom-file))
 (load custom-file)
