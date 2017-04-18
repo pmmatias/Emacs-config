@@ -41,7 +41,7 @@
 (add-to-list 'load-path pemacs-defuns-dir)
 (add-to-list 'custom-theme-load-path pemacs-themes-dir)
 
-;; Load theme
+;; Load the theme
 (load-theme 'noctilux t)
 
 ;; Load the core
