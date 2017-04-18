@@ -3,7 +3,7 @@
 ;; Without this comment Emacs 25+ adds (package-initialize) here
 ;; (package-initialize)
 
-(defconst pemacs-version "1.1.0" "pEmacs version.")
+(defconst pemacs-version "1.1.1" "pEmacs version.")
 (defconst pemacs-min-emacs-ver "24.4" "Minimal version of GNU Emacs.")
 (defvar pemacs-dir (file-name-directory load-file-name)
   "Root directory of this config.")
@@ -40,6 +40,9 @@
 (add-to-list 'load-path pemacs-modules-dir)
 (add-to-list 'load-path pemacs-defuns-dir)
 (add-to-list 'custom-theme-load-path pemacs-themes-dir)
+
+;; Load theme
+(load-theme 'noctilux t)
 
 ;; Load the core
 (require 'core-packages)

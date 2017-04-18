@@ -76,7 +76,4 @@
 ;; buffers names
 (setq uniquify-buffer-name-style 'forward)
 
-;; Use the wombat theme
-(load-theme 'wombat t)
-
 (provide 'core-defaults)
