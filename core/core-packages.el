@@ -16,6 +16,7 @@
                      csv-mode
                      diminish
                      dockerfile-mode
+                     elpy
                      evil
                      flycheck
                      flycheck-haskell

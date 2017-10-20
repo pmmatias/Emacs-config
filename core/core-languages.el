@@ -4,6 +4,9 @@
 ;; Enable Haskell indentation
 (add-hook 'haskell-mode-hook 'turn-on-haskell-indent)
 
+;; Enable elpy
+(elpy-enable)
+
 ;; Enable web-mode
 (require 'web-mode)
 (add-to-list 'auto-mode-alist '("\\.html?\\'" . web-mode))
