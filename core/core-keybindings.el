@@ -19,4 +19,7 @@
 ;; Avy (jump to things in tree-style)
 (global-set-key (kbd "C-'") 'avy-goto-char-2)
 
+;; Bind F8 to neotree
+(global-set-key [f8] 'neotree-toggle)
+
 (provide 'core-keybindings)

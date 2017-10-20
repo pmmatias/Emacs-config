@@ -44,11 +44,14 @@
 ;; Enable multiple-cursors
 (require 'pemacs-multiple-cursors)
 
-;; Enable Projectile
+;; Enable projectile
 (projectile-mode)
 (diminish 'projectile-mode)
 
-;; Enable Evil
+;; Enable neotree
+(require 'pemacs-neotree)
+
+;; Enable evil
 (require 'evil)
 
 (provide 'core-editor)

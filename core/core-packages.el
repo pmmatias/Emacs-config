@@ -1,5 +1,6 @@
 ;; Default (auto-installed) packages
 (setq package-list '(ac-c-headers
+                     all-the-icons
                      anzu
                      ascii-art-to-unicode
                      async
@@ -30,6 +31,7 @@
                      magit
                      markdown-mode
                      multiple-cursors
+                     neotree
                      php-mode
                      powershell
                      projectile
