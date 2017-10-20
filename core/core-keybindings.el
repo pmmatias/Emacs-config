@@ -16,6 +16,10 @@
 (global-set-key (kbd "C-M-s") 'isearch-forward)
 (global-set-key (kbd "C-M-r") 'isearch-backward)
 
+;; Enable MoveText default keybindings
+;; (M-Up and M-Down to move text up or down, respectively)
+(move-text-default-bindings)
+
 ;; Avy (jump to things in tree-style)
 (global-set-key (kbd "C-'") 'avy-goto-char-2)
 

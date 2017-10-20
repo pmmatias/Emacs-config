@@ -30,6 +30,7 @@
                      lua-mode
                      magit
                      markdown-mode
+                     move-text
                      multiple-cursors
                      neotree
                      php-mode
