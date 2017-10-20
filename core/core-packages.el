@@ -22,7 +22,7 @@
                      haskell-mode
                      highlight-parentheses
                      html5-schema
-                     ido-ubiquitous
+                     ido-completing-read+
                      ido-vertical-mode
                      iedit
                      json-mode
