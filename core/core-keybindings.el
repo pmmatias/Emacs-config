@@ -26,4 +26,7 @@
 ;; Bind F8 to neotree
 (global-set-key [f8] 'neotree-toggle)
 
+;; Bind F9 to evil
+(global-set-key [f9] 'evil-mode)
+
 (provide 'core-keybindings)
