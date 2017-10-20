@@ -17,6 +17,8 @@
                      diminish
                      dockerfile-mode
                      evil
+                     flycheck
+                     flycheck-haskell
                      gitconfig-mode
                      gitignore-mode
                      go-mode

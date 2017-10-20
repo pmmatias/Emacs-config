@@ -30,6 +30,9 @@
 ;; Enable auto-complete
 (require 'pemacs-auto-complete)
 
+;; Enable flycheck (syntax checking)
+(require 'pemacs-flycheck)
+
 ;; Enable Ido (smarter completion)
 (require 'pemacs-ido)
 
