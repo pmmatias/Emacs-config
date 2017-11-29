@@ -16,6 +16,7 @@
                      csv-mode
                      diminish
                      dockerfile-mode
+                     dumb-jump
                      elpy
                      evil
                      flycheck

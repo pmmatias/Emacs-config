@@ -41,6 +41,9 @@
 (global-anzu-mode +1)
 (diminish 'anzu-mode)
 
+;; Enable dumb-jump (jump to definition)
+(dumb-jump-mode)
+
 ;; Enable iedit (interactive, multi-occurrence editing)
 (require 'iedit)
 
