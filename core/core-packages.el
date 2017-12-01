@@ -12,6 +12,7 @@
                      clojure-mode
                      cmake-mode
                      coffee-mode
+                     csharp-mode
                      css-mode
                      csv-mode
                      diminish
@@ -31,6 +32,7 @@
                      ido-vertical-mode
                      iedit
                      json-mode
+                     less-css-mode
                      lua-mode
                      magit
                      markdown-mode
@@ -40,7 +42,7 @@
                      php-mode
                      powershell
                      projectile
-                     scala-mode
+                     rust-mode
                      smex
                      spray
                      vlf
@@ -58,18 +60,19 @@
     ("\\.elixir\\'" elixir-mode elixir-mode)
     ("\\.erl\\'" erlang erlang-mode)
     ("\\.feature\\'" feature-mode feature-mode)
+    ("\\.fs\\'" fsharp-mode fsharp-mode)
     ("\\.groovy\\'" groovy-mode groovy-mode)
     ("\\.haml\\'" haml-mode haml-mode)
+    ("\\.kt\\'" kotlin-mode kotlin-mode)
     ("\\.kv\\'" kivy-mode kivy-mode)
-    ("\\.less\\'" less-css-mode less-css-mode)
     ("\\.ml\\'" tuareg tuareg-mode)
     ("\\.pp\\'" puppet-mode puppet-mode)
     ("\\.proto\\'" protobuf-mode protobuf-mode)
     ("\\.pyd\\'" cython-mode cython-mode)
     ("\\.pyi\\'" cython-mode cython-mode)
     ("\\.pyx\\'" cython-mode cython-mode)
-    ("\\.rs\\'" rust-mode rust-mode)
     ("\\.sass\\'" sass-mode sass-mode)
+    ("\\.scala\\'" scala-mode scala-mode)
     ("\\.scss\\'" scss-mode scss-mode)
     ("\\.slim\\'" slim-mode slim-mode)
     ("\\.styl\\'" stylus-mode stylus-mode)
