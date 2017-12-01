@@ -33,6 +33,10 @@
 ;; Enable flycheck (syntax checking)
 (require 'pemacs-flycheck)
 
+;; Enable which-key (displays a popup with the available key bindings following
+;; an incomplete command (prefix))
+(require 'pemacs-which-key)
+
 ;; Enable Ido (smarter completion)
 (require 'pemacs-ido)
 

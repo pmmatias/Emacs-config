@@ -46,7 +46,8 @@
                      smex
                      spray
                      vlf
-                     web-mode))
+                     web-mode
+                     which-key))
 
 ;; Packages to auto-install when a file with a given extension is opened
 (defvar package-auto-install-alist
