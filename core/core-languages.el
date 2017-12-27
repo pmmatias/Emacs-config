@@ -6,6 +6,10 @@
 
 ;; Enable elpy
 (elpy-enable)
+;; Disable highlight-indentation-mode
+(delete 'elpy-module-highlight-indentation elpy-modules)
+;; Disable underlining
+(delete 'elpy-module-flymake elpy-modules)
 
 ;; Enable web-mode
 (require 'web-mode)
