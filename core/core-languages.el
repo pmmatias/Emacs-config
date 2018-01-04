@@ -5,11 +5,7 @@
 (add-hook 'haskell-mode-hook 'turn-on-haskell-indent)
 
 ;; Enable elpy
-(elpy-enable)
-;; Disable highlight-indentation-mode
-(delete 'elpy-module-highlight-indentation elpy-modules)
-;; Disable underlining
-(delete 'elpy-module-flymake elpy-modules)
+(require 'pemacs-elpy)
 
 ;; Enable web-mode
 (require 'web-mode)
@@ -27,7 +23,6 @@
 (setq web-mode-markup-indent-offset 4)
 (setq web-mode-css-indent-offset 4)
 (setq web-mode-code-indent-offset 4)
-
 
 
 (provide 'core-languages)

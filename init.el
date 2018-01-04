@@ -3,7 +3,7 @@
 ;; Without this comment Emacs 25+ adds (package-initialize) here
 ;; (package-initialize)
 
-(defconst pemacs-version "1.3.3" "pEmacs version.")
+(defconst pemacs-version "1.3.4" "pEmacs version.")
 (defconst pemacs-min-emacs-ver "24.4" "Minimal version of GNU Emacs.")
 (defvar pemacs-dir (file-name-directory load-file-name)
   "Root directory of this config.")
