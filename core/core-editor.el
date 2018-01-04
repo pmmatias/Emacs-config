@@ -30,6 +30,11 @@
 ;; Enable auto-complete
 (require 'pemacs-auto-complete)
 
+;; Enable YASnippet (template system) for programming modes
+(require 'yasnippet)
+(yas-reload-all)
+(add-hook 'prog-mode-hook #'yas-minor-mode)
+
 ;; Enable flycheck (syntax checking)
 (require 'pemacs-flycheck)
 

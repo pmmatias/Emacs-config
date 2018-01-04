@@ -47,7 +47,8 @@
                      spray
                      vlf
                      web-mode
-                     which-key))
+                     which-key
+                     yasnippet))
 
 ;; Packages to auto-install when a file with a given extension is opened
 (defvar package-auto-install-alist
