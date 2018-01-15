@@ -1,12 +1,9 @@
 ;; Enable elpy
 (elpy-enable)
 
-;; Use Python 3
-(elpy-use-cpython "/usr/bin/python3")
-(setq elpy-rpc-python-command "python3")
-
-;; Use IPython for REPL
-(elpy-use-ipython "ipython3")
+;; Use IPython 3
+(setq python-shell-interpreter "ipython3"
+      python-shell-interpreter-args "-i --simple-prompt")
 
 ;; Disable the Virtual Envs menu
 (pyvenv-mode -1)
