@@ -38,6 +38,7 @@
                      markdown-mode
                      move-text
                      multiple-cursors
+                     nasm-mode
                      neotree
                      php-mode
                      powershell
