@@ -3,8 +3,14 @@
 ;; Without this comment Emacs 25+ adds (package-initialize) here
 ;; (package-initialize)
 
-(defconst pemacs-version "1.3.5" "pEmacs version.")
+(defconst pemacs-version "1.3.6" "pEmacs version.")
 (defconst pemacs-min-emacs-ver "24.4" "Minimal version of GNU Emacs.")
+
+;; Ensure that the Emacs version is at least the required one
+(when (version< emacs-version pemacs-min-emacs-ver)
+  (error "This config requires at least GNU Emacs %s, but you're running %s"
+         pemacs-min-emacs-ver emacs-version))
+
 (defvar pemacs-dir (file-name-directory load-file-name)
   "Root directory of this config.")
 (defvar pemacs-core-dir (expand-file-name "core" pemacs-dir)
@@ -17,11 +23,6 @@
   "Directory for keybinding definitions.")
 (defvar pemacs-themes-dir (expand-file-name "themes" pemacs-dir)
   "Directory for themes.")
-
-;; Ensure that the Emacs version is at least the required one
-(when (version< emacs-version pemacs-min-emacs-ver)
-  (error "This config requires at least GNU Emacs %s, but you're running %s"
-         pemacs-min-emacs-ver emacs-version))
 
 ;; During the initialization increase the GC thresold to 256MB
 (setq gc-cons-threshold (* 256 1024 1024))

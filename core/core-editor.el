@@ -14,7 +14,7 @@
   (format "%x" (+ (string-to-number (substring (face-attribute 'default :background) 5 7) 16) 10))
   )) ;; HACK: There's probably a better way of doing this...
 (set-face-foreground 'highlight nil)
-(set-face-underline-p 'highlight nil)
+(set-face-underline 'highlight nil)
 
 ;; Highlight FIXME: and other comment annotations
 (add-hook 'prog-mode-hook

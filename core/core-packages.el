@@ -1,5 +1,5 @@
 ;; Default (auto-installed) packages
-(setq package-list '(ac-c-headers
+(setq-default package-list '(ac-c-headers
                      all-the-icons
                      anzu
                      ascii-art-to-unicode
@@ -86,7 +86,7 @@
     ("\\.yaml\\'" yaml-mode yaml-mode)))
 
 ;; Package archives list
-(setq package-archives
+(setq-default package-archives
       (quote
        (("gnu" . "https://elpa.gnu.org/packages/")
         ("melpa" . "https://melpa.org/packages/"))))
