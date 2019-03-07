@@ -44,6 +44,7 @@
                      powershell
                      projectile
                      rust-mode
+                     sql-indent
                      smex
                      spray
                      vlf
