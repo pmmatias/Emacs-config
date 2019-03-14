@@ -1,6 +1,6 @@
 # My Emacs config
 
-A modular, well documented, GNU Emacs config focused on simple and non-intrusive enhancing of the defaults
+A modular, well-documented, GNU Emacs config focused on simple and non-intrusive enhancing of the defaults
 
 ## Directory structure
 
@@ -30,7 +30,11 @@ M-Up/Down    | Move the line under point up/down
 
 ## Installation
 
-On Unix, clone to ~/.emacs.d  
+1. On Unix, clone to ~/.emacs.d  
 On Windows, clone to %appdata%\\.emacs.d and run win-fix.bat  
 
-Open Emacs and wait for it to download and install the packages (may take a few minutes)
+2. Open Emacs and wait for it to download and install the packages (may take a few minutes)
+
+3. Type `M-x all-the-icons-install-fonts` to install the icons used by neotree
+
+4. On the first time that you open a file of a given language, run `M-x flycheck-verify-setup` to list the checkers/linters that flycheck supports for that language
