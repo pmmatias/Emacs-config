@@ -35,4 +35,7 @@
 ;; Enable neotree
 (require 'pemacs-neotree)
 
+;; Show icons on Dired
+(add-hook 'dired-mode-hook 'all-the-icons-dired-mode)
+
 (provide 'core-ui)
