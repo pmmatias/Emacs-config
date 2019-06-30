@@ -47,6 +47,7 @@
 
 ;; Load the core
 (require 'core-packages)
+(require 'core-ui)
 (require 'core-defaults)
 (require 'core-editor)
 (require 'core-keybindings)

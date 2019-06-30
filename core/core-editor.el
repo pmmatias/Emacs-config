@@ -3,19 +3,6 @@
                             (highlight-parentheses-mode)
                             (diminish 'highlight-parentheses-mode)))
 
-;; Highlight current line
-(global-hl-line-mode 1)
-(set-face-background
- 'hl-line
- (concat
-  "#"
-  (format "%x" (+ (string-to-number (substring (face-attribute 'default :background) 1 3) 16) 10))
-  (format "%x" (+ (string-to-number (substring (face-attribute 'default :background) 3 5) 16) 10))
-  (format "%x" (+ (string-to-number (substring (face-attribute 'default :background) 5 7) 16) 10))
-  )) ;; HACK: There's probably a better way of doing this...
-(set-face-foreground 'highlight nil)
-(set-face-underline 'highlight nil)
-
 ;; Highlight FIXME: and other comment annotations
 (add-hook 'prog-mode-hook
           (lambda ()
@@ -62,9 +49,6 @@
 ;; Enable projectile
 (projectile-mode)
 (diminish 'projectile-mode)
-
-;; Enable neotree
-(require 'pemacs-neotree)
 
 ;; Enable evil
 (require 'evil)

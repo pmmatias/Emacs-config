@@ -1,26 +1,5 @@
-;; Disable the startup screen
-(setq inhibit-startup-screen t)
-
 ;; Start the scratch buffer in text mode (avoids the loading of elisp modes)
 (setq initial-major-mode 'text-mode)
-
-;; Change the message of the scratch buffer
-(setq initial-scratch-message
-      ";; This buffer is for notes you don't want to save, and for Lisp evaluation.\n\n")
-
-;; Maximize the window
-(add-hook 'window-setup-hook 'toggle-frame-maximized t)
-
-;; Show the complete file location on the title bar
-(setq frame-title-format
-      (list '((:eval (if (buffer-file-name)
-                         (abbreviate-file-name (buffer-file-name))
-                       "%b")))
-            (format " - emacs%s@%s" emacs-version (system-name))
-            ))
-
-;; Disable the tool-bar
-(tool-bar-mode -1)
 
 ;; Add Imenu to the menu-bar
 (defun try-to-add-imenu ()
