@@ -16,7 +16,7 @@
       (list '((:eval (if (buffer-file-name)
                          (abbreviate-file-name (buffer-file-name))
                        "%b")))
-            (format " - emacs%s@%s" emacs-version system-name)
+            (format " - emacs%s@%s" emacs-version (system-name))
             ))
 
 ;; Disable the tool-bar
@@ -60,8 +60,7 @@
 (add-hook 'prog-mode-hook 'goto-address-prog-mode)
 
 ;; Enable access to the system clipboard
-;; TODO: Replace with select-enable-clipboard for Emacs 25+
-(setq x-select-enable-clipboard t)
+(setq select-enable-clipboard t)
 
 ;; Answer questions with y/n instead of yes/no
 (defalias 'yes-or-no-p 'y-or-n-p)

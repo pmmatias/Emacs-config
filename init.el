@@ -3,8 +3,8 @@
 ;; Without this comment Emacs 25+ adds (package-initialize) here
 ;; (package-initialize)
 
-(defconst pemacs-version "1.3.6" "pEmacs version.")
-(defconst pemacs-min-emacs-ver "24.4" "Minimal version of GNU Emacs.")
+(defconst pemacs-version "1.4.0" "pEmacs version.")
+(defconst pemacs-min-emacs-ver "26.1" "Minimal version of GNU Emacs.")
 
 ;; Ensure that the Emacs version is at least the required one
 (when (version< emacs-version pemacs-min-emacs-ver)
@@ -61,12 +61,6 @@
 (dolist (file (directory-files pemacs-keybindings-dir t "\\w+"))
   (when (file-regular-p file)
     (load file)))
-
-;; Hotfix for CVE-2017-14482
-(when (version< emacs-version "25.3")
-  (eval-after-load "enriched"
-    '(defun enriched-decode-display-prop (start end &optional param)
-       (list start end))))
 
 ;; If there's no Emacs server running, start it
 (require 'server)

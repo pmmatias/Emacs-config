@@ -10,7 +10,6 @@
 (global-set-key (kbd "<f6>") 'ibuffer)
 
 ;; Swap C-s and C-r with the regex-aware incremental search functions
-;; TODO: Replace with search-default-regexp-mode for Emacs 25+
 (global-set-key (kbd "C-s") 'isearch-forward-regexp)
 (global-set-key (kbd "C-r") 'isearch-backward-regexp)
 (global-set-key (kbd "C-M-s") 'isearch-forward)
