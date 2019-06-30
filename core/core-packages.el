@@ -66,6 +66,7 @@
     ("\\.erl\\'" erlang erlang-mode)
     ("\\.feature\\'" feature-mode feature-mode)
     ("\\.fs\\'" fsharp-mode fsharp-mode)
+    ("\\.graphql\\'" graphql-mode graphql-mode)
     ("\\.groovy\\'" groovy-mode groovy-mode)
     ("\\.haml\\'" haml-mode haml-mode)
     ("\\.kt\\'" kotlin-mode kotlin-mode)
