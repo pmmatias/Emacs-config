@@ -1,6 +1,7 @@
 ;; pmmatias' GNU Emacs config
 
 ;; Without this comment Emacs 25+ adds (package-initialize) here
+;; TODO: Remove for Emacs 27+
 ;; (package-initialize)
 
 (defconst pemacs-version "1.4.0" "pEmacs version.")
@@ -24,7 +25,7 @@
 (defvar pemacs-themes-dir (expand-file-name "themes" pemacs-dir)
   "Directory for themes.")
 
-;; During the initialization increase the GC thresold to 256MB
+;; During the initialization increase the GC threshold to 256MB
 (setq gc-cons-threshold (* 256 1024 1024))
 
 ;; After the initialization, set the GC threshold to 64MB
