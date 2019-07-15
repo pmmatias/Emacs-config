@@ -25,6 +25,7 @@ C-'          | Avy - jump to things in tree-style
 C-M-g        | Dumb Jump - attempt to jump to the definition of the symbol under point
 C-;          | Iedit - edit multiple occurrences of the same text at the same time
 C-S-c C-S-c  | Multiple cursors - edit the selected lines at the same time
+C-S-Mouse 1  | Add a cursor
 M-Up/Down    | Move the line under point up/down
 
 

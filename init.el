@@ -4,7 +4,7 @@
 ;; TODO: Remove for Emacs 27+
 ;; (package-initialize)
 
-(defconst pemacs-version "1.4.0" "pEmacs version.")
+(defconst pemacs-version "1.5.0" "pEmacs version.")
 (defconst pemacs-min-emacs-ver "26.1" "Minimal version of GNU Emacs.")
 
 ;; Ensure that the Emacs version is at least the required one
@@ -42,9 +42,6 @@
 (add-to-list 'load-path pemacs-modules-dir)
 (add-to-list 'load-path pemacs-defuns-dir)
 (add-to-list 'custom-theme-load-path pemacs-themes-dir)
-
-;; Load the theme
-(load-theme 'noctilux t)
 
 ;; Load the core
 (require 'core-packages)

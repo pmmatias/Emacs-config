@@ -10,6 +10,7 @@
                              auto-complete-auctex
                              autopair
                              avy
+                             centaur-tabs
                              clojure-mode
                              cmake-mode
                              coffee-mode
@@ -33,6 +34,7 @@
                              ido-vertical-mode
                              iedit
                              json-mode
+                             kaolin-themes
                              less-css-mode
                              lua-mode
                              magit
@@ -48,6 +50,7 @@
                              sql-indent
                              smex
                              spray
+                             telephone-line
                              vlf
                              web-mode
                              which-key

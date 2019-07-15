@@ -1,6 +1,8 @@
 ;; Increase and decrease the size of the text
 (global-set-key (kbd "C-+") 'text-scale-increase)
+(global-set-key [C-mouse-4] 'text-scale-increase)
 (global-set-key (kbd "C--") 'text-scale-decrease)
+(global-set-key [C-mouse-5] 'text-scale-decrease)
 
 ;; Smex (M-x enhancement built on top of Ido)
 (global-set-key (kbd "M-x") 'smex)
