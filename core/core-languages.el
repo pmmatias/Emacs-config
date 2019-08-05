@@ -24,5 +24,7 @@
 (setq web-mode-css-indent-offset 4)
 (setq web-mode-code-indent-offset 4)
 
+;; Load Org mode settings
+(require 'pemacs-org)
 
 (provide 'core-languages)

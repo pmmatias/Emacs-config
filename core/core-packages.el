@@ -43,6 +43,7 @@
                              multiple-cursors
                              nasm-mode
                              neotree
+                             org-bullets
                              php-mode
                              powershell
                              projectile
