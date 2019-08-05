@@ -18,6 +18,7 @@
 
 ;; Disable tabs on certain buffers
 (add-hook 'shell-mode-hook 'centaur-tabs-local-mode)
+(add-hook 'ediff-prepare-buffer-hook 'centaur-tabs-local-mode)
 
 (provide 'pemacs-centaur-tabs)
 
