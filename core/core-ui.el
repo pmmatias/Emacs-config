@@ -8,6 +8,9 @@
 ;; Disable the scroll bars
 (scroll-bar-mode -1)
 
+;; Decrease scrolling speed
+(setq mouse-wheel-scroll-amount '(2 ((shift) . 1)))
+
 ;; Use the Kaolin Ocean theme
 (require 'kaolin-themes)
 (load-theme 'kaolin-ocean t)
