@@ -27,6 +27,7 @@
                              gitconfig-mode
                              gitignore-mode
                              go-mode
+                             groovy-mode
                              haskell-mode
                              highlight-parentheses
                              html5-schema
@@ -71,7 +72,6 @@
     ("\\.feature\\'" feature-mode feature-mode)
     ("\\.fs\\'" fsharp-mode fsharp-mode)
     ("\\.graphql\\'" graphql-mode graphql-mode)
-    ("\\.groovy\\'" groovy-mode groovy-mode)
     ("\\.haml\\'" haml-mode haml-mode)
     ("\\.kt\\'" kotlin-mode kotlin-mode)
     ("\\.kv\\'" kivy-mode kivy-mode)
