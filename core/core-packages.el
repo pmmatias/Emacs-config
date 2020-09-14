@@ -94,9 +94,10 @@
 
 ;; Package archives list
 (setq-default package-archives
-      (quote
-       (("gnu" . "https://elpa.gnu.org/packages/")
-        ("melpa" . "https://melpa.org/packages/"))))
+              (quote
+               (("org" . "https://orgmode.org/elpa/")
+                ("melpa" . "https://melpa.org/packages/")
+                ("gnu" . "https://elpa.gnu.org/packages/"))))
 
 ;; Enable the packages at the startup
 (require 'package)
