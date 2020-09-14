@@ -1,11 +1,7 @@
 ;; pmmatias' GNU Emacs config
 
-;; Without this comment Emacs 25+ adds (package-initialize) here
-;; TODO: Remove for Emacs 27+
-;; (package-initialize)
-
-(defconst pemacs-version "1.5.1" "pEmacs version.")
-(defconst pemacs-min-emacs-ver "26.1" "Minimal version of GNU Emacs.")
+(defconst pemacs-version "1.6.0" "pEmacs version.")
+(defconst pemacs-min-emacs-ver "27.1" "Minimal version of GNU Emacs.")
 
 ;; Ensure that the Emacs version is at least the required one
 (when (version< emacs-version pemacs-min-emacs-ver)
