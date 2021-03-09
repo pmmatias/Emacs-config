@@ -46,6 +46,9 @@
 (set-face-foreground 'highlight nil)
 (set-face-underline 'highlight nil)
 
+;; Show the dashboard
+(require 'pemacs-dashboard)
+
 ;; Enable Telephone Line
 (require 'telephone-line)
 (telephone-line-mode 1)

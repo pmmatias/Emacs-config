@@ -17,6 +17,7 @@
                              csharp-mode
                              css-mode
                              csv-mode
+			     dashboard
                              diminish
                              dockerfile-mode
                              dumb-jump
