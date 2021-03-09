@@ -45,6 +45,7 @@
                              nasm-mode
                              neotree
                              org-bullets
+                             orgbox
                              php-mode
                              powershell
                              projectile
