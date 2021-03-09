@@ -1,3 +1,7 @@
+;; Enable the commands for upcasing and downcasing a region
+(put 'upcase-region 'disabled nil)
+(put 'downcase-region 'disabled nil)
+
 ;; Enable highlight-parentheses-mode on programming buffers
 (add-hook 'prog-mode-hook (lambda ()
                             (highlight-parentheses-mode)
