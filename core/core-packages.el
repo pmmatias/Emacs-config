@@ -17,7 +17,7 @@
                              csharp-mode
                              css-mode
                              csv-mode
-			     dashboard
+                             dashboard
                              diminish
                              dockerfile-mode
                              dumb-jump
@@ -31,13 +31,12 @@
                              groovy-mode
                              haskell-mode
                              highlight-parentheses
-                             html5-schema
                              ido-completing-read+
                              ido-vertical-mode
                              iedit
                              json-mode
                              kaolin-themes
-                             less-css-mode
+                             kotlin-mode
                              lua-mode
                              magit
                              markdown-mode
@@ -63,6 +62,7 @@
 (defvar package-auto-install-alist
   '(("Cask" cask-mode cask-mode)
     ("PKGBUILD\\'" pkgbuild-mode pkgbuild-mode)
+    ("\\.adoc\\'" adoc-mode adoc-mode)
     ("\\.d\\'" d-mode d-mode)
     ("\\.dart\\'" dart-mode dart-mode)
     ("\\.elm\\'" elm-mode elm-mode)
@@ -74,8 +74,8 @@
     ("\\.fs\\'" fsharp-mode fsharp-mode)
     ("\\.graphql\\'" graphql-mode graphql-mode)
     ("\\.haml\\'" haml-mode haml-mode)
-    ("\\.kt\\'" kotlin-mode kotlin-mode)
     ("\\.kv\\'" kivy-mode kivy-mode)
+    ("\\.less\\'" less-css-mode less-css-mode)
     ("\\.ml\\'" tuareg tuareg-mode)
     ("\\.pp\\'" puppet-mode puppet-mode)
     ("\\.proto\\'" protobuf-mode protobuf-mode)
