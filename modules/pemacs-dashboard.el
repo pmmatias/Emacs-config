@@ -17,5 +17,8 @@
                         (projects . 5)
                         (agenda . 5)))
 
+;; Disable the footnote
+(setq dashboard-set-footer nil)
+
 
 (provide 'pemacs-dashboard)
