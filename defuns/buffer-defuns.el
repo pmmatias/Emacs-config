@@ -7,7 +7,7 @@
 
 
 (defun new-tmp-buffer ()
-  "Create a new temporary buffer
+  "Create a new temporary buffer.
 When killed, it won't remind you to save it"
   (interactive)
   (switch-to-buffer (generate-new-buffer "tmp")))
