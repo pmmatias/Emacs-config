@@ -1,0 +1,39 @@
+* My Emacs config
+
+A modular, well-documented, GNU Emacs config focused on simple and non-intrusive enhancing of the defaults
+
+** Directory structure
+| Directory   | Description                                                                              |
+|-------------+------------------------------------------------------------------------------------------|
+| core        | Files that change the Emacs' default settings and invoke the other modules of the config |
+| defuns      | Files that define useful utility functions                                               |
+| keybindings | Local (extra-config) keybindings                                                         |
+| modules     | Config files for packages invoked on the core files                                      |
+| themes      | Source code for themes not available on the repositories                                 |
+
+** New keybindings
+| Shortcut    | Function                                                                |
+|-------------+-------------------------------------------------------------------------|
+| F6          | Open ibuffer                                                            |
+| F8          | Open/close neotree sidebar                                              |
+| F9          | Enable/disable evil-mode (vi emulation)                                 |
+| C-'         | Avy - jump to things in tree-style                                      |
+| C-M-g       | Dumb Jump - attempt to jump to the definition of the symbol under point |
+| C-;         | Iedit - edit multiple occurrences of the same text at the same time     |
+| C-S-c C-S-c | Multiple cursors - edit the selected lines at the same time             |
+| C-c C-left  | Centaur tabs - change to the tab on the left                            |
+| C-c C-right | Centaur tabs - change to the tab on the right                           |
+| C-c C-up    | Centaur tabs - change to previous tab group                             |
+| C-c C-down  | Centaur tabs - change to next tab group                                 |
+| C-S-Mouse 1 | Add a cursor                                                            |
+| M-Up/Down   | Move the line under point up/down                                       |
+
+** Installation
+1. On Unix, clone to ~/.emacs.d  
+   On Windows, clone to %appdata%\\.emacs.d and run win-fix.bat  
+
+2. Open Emacs and wait for it to download and install the packages (may take a few minutes)
+
+3. Type `M-x all-the-icons-install-fonts` to install the icons used by neotree
+
+4. On the first time that you open a file of a given language, run `M-x flycheck-verify-setup` to list the checkers/linters that flycheck supports for that language
