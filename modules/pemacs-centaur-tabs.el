@@ -1,3 +1,8 @@
+;; Enable the default key bindings
+;; This must come before the package is loaded
+(setq centaur-tabs-enable-key-bindings t)
+
+;; Load the package
 (require 'centaur-tabs)
 
 ;; Enable Centaur Tabs

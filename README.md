@@ -24,6 +24,10 @@ C-'          | Avy - jump to things in tree-style
 C-M-g        | Dumb Jump - attempt to jump to the definition of the symbol under point
 C-;          | Iedit - edit multiple occurrences of the same text at the same time
 C-S-c C-S-c  | Multiple cursors - edit the selected lines at the same time
+C-c C-left   | Centaur tabs - change to the tab on the left
+C-c C-right  | Centaur tabs - change to the tab on the right
+C-c C-up     | Centaur tabs - change to previous tab group
+C-c C-down   | Centaur tabs - change to next tab group
 C-S-Mouse 1  | Add a cursor
 M-Up/Down    | Move the line under point up/down
 
