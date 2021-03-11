@@ -14,9 +14,8 @@
                                     '(("\\<\\(\\(FIX\\(ME\\)?\\|TODO\\|BUG\\|HACK\\):\\)"
                                        1 font-lock-warning-face t)))))
 
-;; Enable autopair (close parentheses and quotes automatically)
-(autopair-global-mode t)
-(diminish 'autopair-mode)
+;; Enable electric-pair-mode (close parentheses and quotes automatically)
+(electric-pair-mode 1)
 
 ;; Enable auto-complete
 (require 'pemacs-auto-complete)

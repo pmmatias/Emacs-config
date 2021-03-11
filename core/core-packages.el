@@ -8,7 +8,6 @@
                              auctex
                              auto-complete
                              auto-complete-auctex
-                             autopair
                              avy
                              centaur-tabs
                              clojure-mode
