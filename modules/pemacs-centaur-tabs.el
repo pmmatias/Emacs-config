@@ -8,6 +8,25 @@
 ;; Enable Centaur Tabs
 (centaur-tabs-mode t)
 
+;; Disable the grouping of tabs
+(defun centaur-tabs-buffer-groups ()
+      "`centaur-tabs-buffer-groups' control buffers' group rules."
+      (list "All"))
+
+;; Don't display the tabs for some buffers
+(defun centaur-tabs-hide-tab (x)
+  "Do no to show buffer X in tabs."
+  (let ((name (format "%s" x)))
+    (or
+     ;; Current window is not dedicated window.
+     (window-dedicated-p (selected-window))
+
+     ;; Buffer name not match below blacklist.
+     (string-prefix-p "*Messages" name)
+     (string-prefix-p "*Calc" name)
+
+     )))
+
 ;; Set tab style to box
 (setq centaur-tabs-style "box")
 
