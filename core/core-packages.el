@@ -56,7 +56,8 @@
                              vlf
                              web-mode
                              which-key
-                             yasnippet))
+                             yasnippet
+                             yasnippet-snippets))
 
 ;; Packages to auto-install when a file with a given extension is opened
 (defvar package-auto-install-alist
