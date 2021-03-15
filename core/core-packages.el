@@ -20,6 +20,7 @@
                              diminish
                              dockerfile-mode
                              dumb-jump
+                             eglot
                              elpy
                              evil
                              flycheck
