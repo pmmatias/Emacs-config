@@ -16,8 +16,6 @@
   "Directory for the modules of this config.")
 (defvar pemacs-defuns-dir (expand-file-name "defuns" pemacs-dir)
   "Directory that contains useful functions.")
-(defvar pemacs-keybindings-dir (expand-file-name "keybindings" pemacs-dir)
-  "Directory for keybinding definitions.")
 (defvar pemacs-themes-dir (expand-file-name "themes" pemacs-dir)
   "Directory for themes.")
 
@@ -49,11 +47,6 @@
 
 ;; Load the defuns
 (dolist (file (directory-files pemacs-defuns-dir t "\\w+"))
-  (when (file-regular-p file)
-    (load file)))
-
-;; Load the keybindings
-(dolist (file (directory-files pemacs-keybindings-dir t "\\w+"))
   (when (file-regular-p file)
     (load file)))
 

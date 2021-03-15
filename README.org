@@ -7,7 +7,6 @@ A modular, well-documented, GNU Emacs config focused on simple and non-intrusive
 |-------------+------------------------------------------------------------------------------------------|
 | core        | Files that change the Emacs' default settings and invoke the other modules of the config |
 | defuns      | Files that define useful utility functions                                               |
-| keybindings | Local (extra-config) keybindings                                                         |
 | modules     | Config files for packages invoked on the core files                                      |
 | themes      | Source code for themes not available on the repositories                                 |
 
