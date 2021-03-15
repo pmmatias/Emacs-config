@@ -8,7 +8,7 @@ A modular, well-documented, GNU Emacs config focused on simple and non-intrusive
 | core        | Files that change the Emacs' default settings and invoke the other modules of the config |
 | defuns      | Files that define useful utility functions                                               |
 | modules     | Config files for packages invoked on the core files                                      |
-| themes      | Source code for themes not available on the repositories                                 |
+| themes      | Source code for themes which are not available on the repositories                       |
 
 * New keybindings
 | Shortcut    | Function                                                                |
@@ -23,11 +23,8 @@ A modular, well-documented, GNU Emacs config focused on simple and non-intrusive
 | M-Up/Down   | Move the line under point up/down                                       |
 
 * Installation
-1. On Unix, clone to ~/.emacs.d  
-   On Windows, clone to %appdata%\\.emacs.d and run win-fix.bat  
-
+1. On Unix, clone to ~/.emacs.d
+   On Windows, clone to %appdata%\\.emacs.d
 2. Open Emacs and wait for it to download and install the packages (may take a few minutes)
-
-3. Type `M-x all-the-icons-install-fonts` to install the icons used by neotree
-
+3. Type `M-x all-the-icons-install-fonts` to install the icons
 4. On the first time that you open a file of a given language, run `M-x flycheck-verify-setup` to list the checkers/linters that flycheck supports for that language
