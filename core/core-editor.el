@@ -42,6 +42,7 @@
 
 ;; Enable dumb-jump (jump to definition)
 (dumb-jump-mode)
+(add-hook 'xref-backend-functions #'dumb-jump-xref-activate)
 
 ;; Enable iedit (interactive, multi-occurrence editing)
 (require 'iedit)
