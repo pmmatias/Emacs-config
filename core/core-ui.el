@@ -56,9 +56,8 @@
 ;; Enable neotree
 (require 'pemacs-neotree)
 
-;; If runnning with a GUI, enable Centaur Tabs
-(if (display-graphic-p)
-    (require 'pemacs-centaur-tabs))
+;; Enable Centaur Tabs
+(require 'pemacs-centaur-tabs)
 
 ;; Show icons on Dired
 (add-hook 'dired-mode-hook 'all-the-icons-dired-mode)
