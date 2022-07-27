@@ -10,9 +10,7 @@
                              auto-complete-auctex
                              avy
                              centaur-tabs
-                             clojure-mode
                              cmake-mode
-                             coffee-mode
                              csharp-mode
                              css-mode
                              csv-mode
@@ -22,14 +20,12 @@
                              dumb-jump
                              eglot
                              elpy
+                             es-mode
                              evil
                              flycheck
-                             flycheck-haskell
-                             gitconfig-mode
-                             gitignore-mode
+                             git-modes
                              go-mode
                              groovy-mode
-                             haskell-mode
                              highlight-parentheses
                              ido-completing-read+
                              ido-vertical-mode
@@ -37,15 +33,15 @@
                              json-mode
                              kaolin-themes
                              kotlin-mode
-                             lua-mode
                              magit
                              markdown-mode
                              move-text
                              multiple-cursors
-                             nasm-mode
                              neotree
                              org-bullets
                              orgbox
+                             org-roam
+                             org-roam-ui
                              php-mode
                              powershell
                              projectile
@@ -54,9 +50,9 @@
                              smex
                              spray
                              telephone-line
-                             vlf
                              web-mode
                              which-key
+                             yaml-mode
                              yasnippet
                              yasnippet-snippets))
 
@@ -65,6 +61,11 @@
   '(("Cask" cask-mode cask-mode)
     ("PKGBUILD\\'" pkgbuild-mode pkgbuild-mode)
     ("\\.adoc\\'" adoc-mode adoc-mode)
+    ("\\.clj\\'" clojure-mode clojure-mode)
+    ("\\.cljc\\'" clojure-mode clojurec-mode)
+    ("\\.cljs\\'" clojure-mode clojurescript-mode)
+    ("\\.coffee\\'" coffee-mode coffee-mode)
+    ("\\.edn\\'" clojure-mode clojure-mode)
     ("\\.d\\'" d-mode d-mode)
     ("\\.dart\\'" dart-mode dart-mode)
     ("\\.elm\\'" elm-mode elm-mode)
@@ -76,8 +77,10 @@
     ("\\.fs\\'" fsharp-mode fsharp-mode)
     ("\\.graphql\\'" graphql-mode graphql-mode)
     ("\\.haml\\'" haml-mode haml-mode)
+    ("\\.hs\\'" haskell-mode haskell-mode)
     ("\\.kv\\'" kivy-mode kivy-mode)
     ("\\.less\\'" less-css-mode less-css-mode)
+    ("\\.lua\\'" lua-mode lua-mode)
     ("\\.ml\\'" tuareg tuareg-mode)
     ("\\.pp\\'" puppet-mode puppet-mode)
     ("\\.proto\\'" protobuf-mode protobuf-mode)
@@ -91,9 +94,7 @@
     ("\\.styl\\'" stylus-mode stylus-mode)
     ("\\.swift\\'" swift-mode swift-mode)
     ("\\.textile\\'" textile-mode textile-mode)
-    ("\\.thrift\\'" thrift thrift-mode)
-    ("\\.yml\\'" yaml-mode yaml-mode)
-    ("\\.yaml\\'" yaml-mode yaml-mode)))
+    ("\\.thrift\\'" thrift thrift-mode)))
 
 ;; Package archives list
 (setq-default package-archives

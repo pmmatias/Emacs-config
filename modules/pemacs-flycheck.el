@@ -9,8 +9,5 @@
 ;; Use Python 3
 (setq-default flycheck-python-pycompile-executable "/usr/bin/python3")
 
-;; Configure Haskell support
-(eval-after-load 'flycheck
-  '(add-hook 'flycheck-mode-hook #'flycheck-haskell-setup))
 
 (provide 'pemacs-flycheck)

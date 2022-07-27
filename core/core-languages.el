@@ -1,12 +1,6 @@
 ;; Set the default C offset to 4 spaces
 (setq-default c-basic-offset 4)
 
-;; Enable Haskell indentation
-(add-hook 'haskell-mode-hook 'turn-on-haskell-indent)
-
-;; Enable elpy
-(require 'pemacs-elpy)
-
 ;; Enable web-mode
 (require 'web-mode)
 (add-to-list 'auto-mode-alist '("\\.html?\\'" . web-mode))
