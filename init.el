@@ -1,6 +1,6 @@
 ;; pmmatias' GNU Emacs config
 
-(defconst pemacs-version "1.7.1" "pEmacs version.")
+(defconst pemacs-version "1.8.0" "pEmacs version.")
 (defconst pemacs-min-emacs-ver "27.1" "Minimal version of GNU Emacs.")
 
 ;; Ensure that the Emacs version is at least the required one
@@ -30,6 +30,14 @@
 
 ;; Increase the maximum size of the message log buffer to 5000 lines
 (setq message-log-max 5000)
+
+;; Backup and unset the file-name-handler-alist; restore it after the startup.
+;; This variable is used to check if special handler is needed when reading
+;; a file. It is unnecessary at startup, and slows it down significantly.
+(defvar backup--file-name-handler-alist file-name-handler-alist)
+(setq file-name-handler-alist nil)
+(add-hook 'after-init-hook
+          (lambda () (setq file-name-handler-alist backup--file-name-handler-alist)))
 
 ;; Add the config's directories to the load-path
 (add-to-list 'load-path pemacs-core-dir)
