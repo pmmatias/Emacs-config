@@ -8,11 +8,6 @@
 ;; Enable Centaur Tabs
 (centaur-tabs-mode t)
 
-;; Disable the grouping of tabs
-(defun centaur-tabs-buffer-groups ()
-      "`centaur-tabs-buffer-groups' control buffers' group rules."
-      (list "All"))
-
 ;; Don't display the tabs for some buffers
 (defun centaur-tabs-hide-tab (x)
   "Do no to show buffer X in tabs."
@@ -22,8 +17,9 @@
      (window-dedicated-p (selected-window))
 
      ;; Buffer name not match below blacklist.
-     (string-prefix-p "*Messages" name)
      (string-prefix-p "*Calc" name)
+     (string-prefix-p "*Calendar" name)
+     (string-prefix-p "*Messages" name)
 
      )))
 
