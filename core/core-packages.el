@@ -23,6 +23,7 @@
                              es-mode
                              evil
                              flycheck
+                             format-all
                              git-modes
                              go-mode
                              groovy-mode
