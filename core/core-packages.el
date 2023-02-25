@@ -20,6 +20,8 @@
                              dumb-jump
                              eglot
                              elpy
+                             emacsql
+                             emacsql-sqlite
                              es-mode
                              evil
                              flycheck

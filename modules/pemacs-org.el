@@ -5,4 +5,7 @@
 ;; Enable orgbox (allows scheduling for today/next week/etc., instead of a specific date)
 (require 'orgbox)
 
+;; Setup Org-roam to automatically sync. file changes to its DB
+;; (org-roam-db-autosync-mode)
+
 (provide 'pemacs-org)
