@@ -22,4 +22,8 @@
 ;; Enable orgbox (allows scheduling for today/next week/etc., instead of a specific date)
 (require 'orgbox)
 
+;; Render Latex formulas
+(setq org-latex-create-formula-image-program 'dvipng) ; ('imagemagick is an alternative)
+(setq org-startup-with-latex-preview t)
+
 (provide 'pemacs-org)
