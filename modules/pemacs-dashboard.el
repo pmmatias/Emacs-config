@@ -18,7 +18,9 @@
                         (agenda . 5)))
 
 ;; Disable the footnote
-(setq dashboard-set-footer nil)
+(setq dashboard-footer-messages (list ()))
 
+;; Hide the modeline
+(add-hook 'dashboard-mode-hook (lambda () (setq-local mode-line-format nil)))
 
 (provide 'pemacs-dashboard)
