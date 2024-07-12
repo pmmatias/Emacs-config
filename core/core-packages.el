@@ -9,6 +9,7 @@
                              auto-complete
                              auto-complete-auctex
                              avy
+                             benchmark-init
                              centaur-tabs
                              cmake-mode
                              csharp-mode

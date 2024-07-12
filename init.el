@@ -1,12 +1,16 @@
 ;; pmmatias' GNU Emacs config
 
-(defconst pemacs-version "1.8.2" "pEmacs version.")
+(defconst pemacs-version "1.8.3" "pEmacs version.")
 (defconst pemacs-min-emacs-ver "27.1" "Minimal version of GNU Emacs.")
 
 ;; Ensure that the Emacs version is at least the required one
 (when (version< emacs-version pemacs-min-emacs-ver)
   (error "This config requires at least GNU Emacs %s, but you're running %s"
          pemacs-min-emacs-ver emacs-version))
+
+;; Uncomment the lines bellow to benchmark the calls to require and load functions
+;; (require 'benchmark-init)
+;; (add-hook 'after-init-hook 'benchmark-init/deactivate)
 
 (defvar pemacs-dir (file-name-directory load-file-name)
   "Root directory of this config.")
