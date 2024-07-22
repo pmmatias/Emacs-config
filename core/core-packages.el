@@ -54,6 +54,7 @@
                              smex
                              spray
                              telephone-line
+                             terraform-mode
                              web-mode
                              which-key
                              yaml-mode
