@@ -1,7 +1,7 @@
 ;; pmmatias' GNU Emacs config
 
-(defconst pemacs-version "1.8.3" "pEmacs version.")
-(defconst pemacs-min-emacs-ver "27.1" "Minimal version of GNU Emacs.")
+(defconst pemacs-version "1.8.4" "pEmacs version.")
+(defconst pemacs-min-emacs-ver "29.4" "Minimal version of GNU Emacs.")
 
 ;; Ensure that the Emacs version is at least the required one
 (when (version< emacs-version pemacs-min-emacs-ver)
