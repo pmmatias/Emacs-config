@@ -20,6 +20,7 @@ A modular, well-documented, GNU Emacs config focused on simple and non-intrusive
 | C-;         | Iedit - edit multiple occurrences of the same text at the same time     |
 | C-S-c C-S-c | Multiple cursors - edit the selected lines at the same time             |
 | C-S-Mouse 1 | Add a cursor                                                            |
+| C-PGUP/PGDN | Switch tabs                                                             |
 | M-Up/Down   | Move the line under point up/down                                       |
 
 * Installation

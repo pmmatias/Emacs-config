@@ -1,6 +1,6 @@
-;; Enable the default key bindings
-;; This must come before the package is loaded
-(setq centaur-tabs-enable-key-bindings t)
+;; Set the key bindings for switching tabs
+(global-set-key (kbd "C-<prior>") 'centaur-tabs-backward)
+(global-set-key (kbd "C-<next>") 'centaur-tabs-forward)
 
 ;; Load the package
 (require 'centaur-tabs)
